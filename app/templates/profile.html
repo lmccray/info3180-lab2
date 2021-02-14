@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+	<div class = "ProPic">
+        <img src="{{ url_for('static', filename= 'img.png') }}" id="ProfilePic">
+        <h2>Leonard McCray</h2>
+        <div id="UserName"><b>@Pandemicsociety</b></div>
+        <div id="Location"><b></b>Kingston, Jamaica</div>
+        <div id="Date Joined" class="bottomborder"> {{date_joined}}</div>
+	</div>
+	<div class = "Two">
+		<section class="Bio">
+            <p>Web Development student that enjoys coding and learning new information.</p>
+        </section>
+        <ul class="proinfo">
+            <li class="info">
+                <p class="accvalues">20</p>
+                <p class="label">Posts</p>
+            </li>
+            <li class="info">
+                <p class="accvalues">100</p>
+                <p class="label">Following</p>
+            </li>
+            <li class="info">
+                <p class="accvalues">200</p>
+                <p class="label">Followers</p>
+            </li>
+        </ul>
+    <div style="text-align:center;">
+        <button>Follow</button>
+    </div>
+        </div>
+            </section>
+        </div>
+{% endblock %}
